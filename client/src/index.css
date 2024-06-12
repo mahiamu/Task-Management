@@ -1,0 +1,49 @@
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Apply styles to the body */
+body {
+    font-family: 'Roboto', sans-serif; /* Set font to Roboto */
+    background-color: #7d8e7e; /* Set background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Add responsive styling for different screen sizes */
+/* For screens smaller than 600px (e.g., mobile devices) */
+@media only screen and (max-width: 600px) {
+    /* Adjust layout for mobile devices */
+    /* For example: */
+    .container {
+        width: 90%; /* Adjust container width */
+        margin: 0 auto; /* Center container */
+    }
+    .header {
+        font-size: 24px; /* Adjust header font size */
+    }
+    .menu {
+        display: none; /* Hide menu on smaller screens */
+    }
+}
+
+/* For screens between 601px and 1024px (e.g., tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust layout for tablets */
+    /* For example: */
+    .container {
+        width: 80%; /* Adjust container width */
+    }
+}
+
+/* For screens larger than 1025px (e.g., desktops) */
+@media only screen and (min-width: 1025px) {
+    /* Adjust layout for desktops */
+    /* For example: */
+    .container {
+        width: 1200px; /* Set fixed container width */
+        margin: 0 auto; /* Center container */
+    }
+}
